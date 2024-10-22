@@ -1,0 +1,114 @@
+.task-card {
+    position: relative;
+    padding: 8px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4px;
+}
+
+.task-id {
+    font-size: 12px;
+    color: #666;
+    margin: 0;
+    font-weight: 500;
+}
+
+.user-avatar {
+    position: relative;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: #FFFFFF;
+    font-size: 10px;
+}
+
+.availability-indicator {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+}
+
+.available {
+    background-color: #FFD700; /* Yellow */
+}
+
+.unavailable {
+    background-color: #D3D3D3; /* Light Grey */
+}
+
+.card-content {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 12px; /* Increased from 4px to 12px */
+}
+
+.status-icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    margin-top: 2px;
+}
+
+.task-title {
+    font-size: 14px;
+    margin: 0;
+    flex: 1;
+    display: -webkit-box;
+    display: box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-word;
+    max-height: 2.8em; /* Approximately two lines of text */
+}
+
+.card-footer {
+    display: flex;
+    align-items: center;
+    margin-top: 8px; /* Added margin-top */
+}
+
+.priority-icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+}
+
+.tag-container {
+    display: flex;
+    align-items: center;
+}
+
+.tag-circle {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #C0C0C0;
+    margin-right: 6px;
+}
+
+.tag {
+    font-size: 12px;
+    color: #666;
+}
+
+/* ... (rest of your existing styles) ... */
