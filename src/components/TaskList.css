@@ -72,6 +72,12 @@
     flex-wrap: nowrap;
     justify-content: flex-start;
     overflow-x: auto;
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none; /* For Internet Explorer and Edge */
+}
+
+.columns::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Opera */
 }
 
 .column {
@@ -179,4 +185,45 @@
 /* Add some space between "Display" text and down arrow */
 .display-dropdown span {
     margin-right: 4px;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    .task-list-header {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    .display-dropdown {
+        order: 1;
+    }
+
+    .task-list-header h1 {
+        position: static;
+        transform: none;
+        order: 2;
+        text-align: right;
+        font-size: 1.3em;
+        margin: 0;
+        padding-right: 10px; /* Add some padding to align with the container's right edge */
+    }
+
+    .user-info {
+        order: 3;
+        width: 100%;
+        text-align: right;
+        margin-top: 5px;
+        padding-right: 10px; /* Align with the main heading */
+    }
+
+    .columns {
+        flex-wrap: wrap;
+        overflow-x: hidden;
+    }
+
+    .column {
+        flex: 0 0 100%;
+        min-width: 100%;
+    }
 }

@@ -112,3 +112,22 @@
 }
 
 /* ... (rest of your existing styles) ... */
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    .task-card {
+        padding: 16px; /* Increased padding for mobile */
+    }
+
+    .card-top {
+        margin-bottom: 8px; /* Slightly increased margin */
+    }
+
+    .card-content {
+        margin-bottom: 16px; /* Increased margin */
+    }
+
+    .card-footer {
+        margin-top: 12px; /* Increased margin */
+    }
+}
